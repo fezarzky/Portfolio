@@ -1,3 +1,6 @@
+import React from 'react';
+import AboutImg from '../../assets/feza_about.jpg';
+
 export const About = () => {
     return (
         <section id="about" className="py-24 px-4">
@@ -9,11 +12,13 @@ export const About = () => {
                 </h2>
                 <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[640px] relative">
                     <div className="flex items-center justify-center">
-                        <img src="../../assets/feza_about.jpg" alt="About Me" className="w-1/2 h-auto rounded-lg shadow-lg" />
+                        <img src={AboutImg} alt="About Me" className="w-1/2 h-auto rounded-lg shadow-lg" />
                     </div>
                     <div className="flex flex-col justify-center items-center md:items-start space-y-4 pr-0 md:pl-12">
                         <p className="text-md font-light">
-                            Hello! I'm Feza, a passionate web developer and college student. I love creating beautiful and functional websites that provide great user experiences. My journey in web development has been driven by a strong desire to learn and improve continuously.
+                            Hello! I'm Feza, a passionate web developer and college student. 
+                            I love creating beautiful and functional websites that provide great user experiences. 
+                            My journey in web development has been driven by a strong desire to learn and improve continuously.
                         </p>
                     </div>
                 </div>
