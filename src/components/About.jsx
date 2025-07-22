@@ -6,7 +6,7 @@ export const About = () => {
         <section id="about" className="py-24 px-4">
             <div className="container">
                 <p className="text-sm text-center text-[#CCB465]">Get to know more</p>
-                <h2 className="text-3xl lg:text-4xl font-bold text-center mt-4 mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold text-center mt-1 mb-8">
                     <span className="text-[#FF5841]">About</span>
                     <span className=""> Me.</span>
                 </h2>
@@ -16,7 +16,7 @@ export const About = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center md:items-start space-y-4 pr-0 md:pl-12">
                         <p className="text-md font-light">
-                            Hello! I'm Feza, a passionate web developer and college student. 
+                            Hello! I'm Feza, a passionate web developer and college student at Politeknik Negeri Semarang. 
                             I love creating beautiful and functional websites that provide great user experiences. 
                             My journey in web development has been driven by a strong desire to learn and improve continuously.
                         </p>
