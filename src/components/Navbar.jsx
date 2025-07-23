@@ -6,7 +6,7 @@ const navItems = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' }
+  { name: 'Contacts', href: '#contacts' }
 ];
 
 export const Navbar = () => {
@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10); 
+      setIsScrolled(window.scrollY > 10); 
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -24,7 +24,7 @@ export const Navbar = () => {
 
   return (
     <nav className={cn("w-full flex justify-between items-center fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-                    isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5")}>
+                    isScrolled ? "py-3 bg-[OA1828]/60 backdrop-blur" : "py-5")}>
 
         <div className="container flex justify-between items-center">
           <a className="text-xl font-bold font-poppins flex items-center"

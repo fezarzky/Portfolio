@@ -30,7 +30,7 @@ export const  HeroSection = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }} />
                 </div>
-                <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
                     <span className="text-[#CCB465] text-glow">Scroll</span>
                     <ArrowDown className="w-5 h-5 text-[#CCB465]"></ArrowDown>
                 </div>

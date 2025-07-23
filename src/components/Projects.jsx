@@ -1,6 +1,6 @@
 import React from 'react'
 import laundryeahThumbnail from '/projects/laundryeah-thumbnail.png'
-import { ExternalLink } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 import { Github } from 'lucide-react';
 
 const projects = [
@@ -36,7 +36,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id='projects'>
+    <section id='projects' className='py-20 px-4'>
         <div className="container">
             <p className="text-sm text-center text-[#CCB465]">Let me show you</p>
                 <h2 className="text-3xl lg:text-4xl font-bold text-center mt-1 mb-8">
@@ -72,6 +72,11 @@ export const Projects = () => {
                     </div>
                   </div>
                 ))}
+            </div>
+            <div className='text-center mt-5 p-2 pb-5'>
+              <button className='primary-button bg-[#CCB465] text-white px-6 py-3 rounded-full hover:bg-[#FF5841] hover:scale-105 transition-transform transition-colors duration-300'>
+                <a href="https://github.com/fezarzky" target="_blank" className='w-fit flex items-center mx-auto gap-2'>Check My Github! <ArrowRight /></a>
+              </button>
             </div>
         </div>
     </section>
