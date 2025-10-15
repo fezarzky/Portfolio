@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutImg from '../../assets/feza_about.jpg';
+import HeroImg from '../../assets/feza_hero.jpg';
 
 export const About = () => {
     return (
@@ -12,7 +12,7 @@ export const About = () => {
                 </h2>
                 <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[640px] relative">
                     <div className="flex items-center justify-center">
-                        <img src={AboutImg} alt="About Me" className="w-1/2 h-auto rounded-lg shadow-lg" />
+                        <img src={HeroImg} alt="About Me" className="w-1/2 h-auto rounded-lg shadow-lg" />
                     </div>
                     <div className="flex flex-col justify-center items-center md:items-start space-y-4 pr-0 md:pl-12">
                         <p className="text-md font-light">

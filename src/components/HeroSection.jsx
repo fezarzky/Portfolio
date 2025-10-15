@@ -1,6 +1,6 @@
 import React from 'react';
-import HeroImg from '../../assets/feza_hero.jpg';
-import CV from '../../assets/CV_Feza Rizky Putra Pratama.pdf';
+import KTM from '../../assets/KTM_FEZA.jpg';
+import CV from '../../assets/CV-FEZA-ATS.pdf';
 import {motion} from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 
@@ -18,14 +18,14 @@ export const  HeroSection = () => {
                             I'm a Web Developer College Student
                             with a strong will to improve!</p>
                         <button className="primary-button mt-5 opacity-0 animate-fade-in-delay-3">
-                            <a href={CV} download='CV'>
+                            <a href={CV} download={CV}>
                                 Download CV
                             </a>
                         </button>
                     </div>
                 </div>
                 <div className="flex items-center justify-center">
-                    <motion.img src={HeroImg} alt="Hero" className="w-1/2 h-auto" 
+                    <motion.img src={KTM} alt="Hero" className="w-1/2 h-auto" 
                         initial={{ opacity: 0, x: 100 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }} />

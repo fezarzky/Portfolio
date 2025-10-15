@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     title: 'Laundryeah Mobile App',
-    description: 'This is a brief description of the Laundryeah mobile app.',
+    description: 'Mengembangkan aplikasi mobile untuk layanan laundry menggunakan Flutter, mencakup fitur pemesanan, pelacakan status cucian, dan notifikasi.',
     image: laundryeahThumbnail,
     tags: ['Flutter', 'Firebase'],
     demoUrl:"#",
@@ -15,21 +15,21 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Laundryeah Mobile App',
-    description: 'This is a brief description of the Laundryeah mobile app.',
+    title: 'SIRATA (Sistem Informasi Surat Terpadu)',
+    description: 'Mengembangkan dan mengimplementasikan sistem informasi pengelolaan surat masuk dan keluar di lingkungan Politeknik Negeri Semarang.',
     image: '/projects/image1.jpg',
-    tags: ['Flutter', 'Firebase'],
+    tags: ['Laravel'],
     demoUrl:"#",
-    githubUrl: "#"
+    // githubUrl: ""
   },
   {
     id: 3,
-    title: 'Laundryeah Mobile App',
-    description: 'This is a brief description of the Laundryeah mobile app.',
+    title: 'Laundry-FEZZ',
+    description: 'Membangun dashboard admin untuk bisnis laundry guna mengelola data pelanggan, transaksi, dan laporan.',
     image: '/projects/image1.jpg',
-    tags: ['Flutter', 'Firebase'],
+    tags: ['PHP Native'],
     demoUrl:"#",
-    githubUrl: "#"
+    // githubUrl: ""
   },
 ];
 
