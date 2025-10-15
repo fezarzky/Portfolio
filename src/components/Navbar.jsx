@@ -10,21 +10,32 @@ const navItems = [
 ];
 
 export const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10); 
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY < lastScrollY || currentScrollY < 10) {
+        // Scrolling up or at the top
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down
+        setIsVisible(false);
+      }
+      
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   return (
-    <nav className={cn("w-full flex justify-between items-center fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-                    isScrolled ? "py-3 bg-[OA1828]/60 backdrop-blur" : "py-5")}>
+    <nav className={cn("w-full flex justify-between items-center top-0 left-0 right-0 z-50 transition-all duration-300 py-3 bg-[#0A1828]/60 backdrop-blur",
+                    isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0")}>
 
         <div className="container flex justify-between items-center">
           <a className="text-xl font-bold font-poppins flex items-center"
